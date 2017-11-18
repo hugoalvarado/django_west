@@ -46,7 +46,9 @@ CACHES = {
 MIDDLEWARE += ['debug_toolbar.middleware.DebugToolbarMiddleware', ]
 INSTALLED_APPS += ['debug_toolbar', ]
 
-INTERNAL_IPS = ['127.0.0.1', '10.0.2.2', ]
+INTERNAL_IPS = ['127.0.0.1', '10.0.2.2', '192.168.99.100']
+
+ALLOWED_HOSTS = ['127.0.0.1', '192.168.99.100']
 
 
 import socket
@@ -61,6 +63,7 @@ DEBUG_TOOLBAR_CONFIG = {
         'debug_toolbar.panels.redirects.RedirectsPanel',
     ],
     'SHOW_TEMPLATE_CONTEXT': True,
+    "SHOW_TOOLBAR_CALLBACK": lambda request: DEBUG,
 }
 
 # django-extensions
