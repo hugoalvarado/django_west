@@ -16,6 +16,9 @@ urlpatterns = [
     url(r'^users/', include('west.users.urls', namespace='users')),
     url(r'^accounts/', include('allauth.urls')),
 
+    # Project management
+    url(r'^projects/', include('west.projects.urls', namespace='projects')),
+
     # Your stuff: custom urls includes go here
 
 

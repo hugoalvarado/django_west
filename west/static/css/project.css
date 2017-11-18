@@ -19,3 +19,16 @@
 [hidden][style="display: block;"] {
   display: block !important;
 }
+
+/* Override Bootstrap 4 styling on Django Debug Toolbar */
+#djDebug[hidden], #djDebug [hidden] {
+    display: block !important;
+}
+
+#djDebug [hidden][style='display: none;'] {
+    display: none !important;
+}
+
+[hidden="hidden"][style*="display: block;"] {
+  display: block !important;
+}
