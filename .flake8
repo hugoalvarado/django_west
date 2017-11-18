@@ -1,0 +1,5 @@
+[flake8]
+filename = ./west/*.py
+# ignore = D203
+exclude = .git,__pycache__,docs/source/conf.py,old,build,dist,migrations
+max-complexity = 10
