@@ -55,6 +55,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     # custom users app
     'west.users.apps.UsersConfig',
+    'west.projects.apps.ProjectsConfig',
     # Your stuff: custom apps go here
 ]
 
